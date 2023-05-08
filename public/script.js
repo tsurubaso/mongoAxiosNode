@@ -1,9 +1,16 @@
 
 
-console.log("test")
+//console.log(axios)
+//we read all Threads 
 
-
-
+const getAllThreads = async () => { 
+  try {
+    let allThreads= await axios.get("/api/v1/threads");
+  } catch (error) {
+    console.log(error);
+  }
+};
+  getAllThreads()
 
 
 /*// data fetching
